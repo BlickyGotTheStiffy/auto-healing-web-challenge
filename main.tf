@@ -126,9 +126,9 @@ resource "azurerm_linux_virtual_machine_scale_set" "web" {
     version   = "latest"
   }
   automatic_instance_repair {
-  enabled      = true
-  grace_period = "PT10M"
-}
+    enabled      = true
+    grace_period = "PT10M"
+  }
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
