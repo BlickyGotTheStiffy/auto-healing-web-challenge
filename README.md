@@ -28,9 +28,26 @@ The architecture is designed to provide:
 
 ---
 
+## Platform Choice
+
+Azure was selected for this solution due to its native support for Virtual Machine Scale Sets, Azure Load Balancer health probes, and Automatic Instance Repair capabilities, which closely align with the self-healing and N+1 availability requirements of the challenge.
+
+Terraform was chosen as the Infrastructure as Code (IaC) platform because it is cloud-agnostic, widely adopted across the industry, and allows infrastructure to be defined in a reusable, version-controlled and repeatable manner.
+
+Azure services used in this solution include:
+
+- Azure Resource Group
+- Azure Virtual Network
+- Azure Network Security Group
+- Azure Public IP
+- Azure Standard Load Balancer
+- Azure Linux Virtual Machine Scale Set
+
+This combination provides a low-cost, highly available and automatically recoverable web tier while remaining within the required monthly budget.
+
 # Architecture Diagram
 
-docs/infrastructure.drawio.png
+docs/infrastructure.png
 
 Key features:
 
