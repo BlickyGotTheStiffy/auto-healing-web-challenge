@@ -47,7 +47,7 @@ This combination provides a low-cost, highly available and automatically recover
 
 # Architecture Diagram
 
-docs/infrastructure.png
+docs/infrastructurediagram.png
 
 Key features:
 
