@@ -8,6 +8,7 @@ locals {
     nsg  = "nsg-${var.workload_name}-${var.environment}-${local.region_code}"
     pip  = "pip-${var.workload_name}-${var.environment}-${local.region_code}"
     lb   = "lb-${var.workload_name}-${var.environment}-${local.region_code}"
+    vmss = "vmss-${var.workload_name}-${var.environment}-${local.region_code}"
   }
 
   common_tags = {

@@ -21,3 +21,22 @@ variable "owner" {
   type        = string
   default     = "Abdi Hassan"
 }
+
+variable "vm_admin_username" {
+  description = "VM Admin username"
+  type        = string
+  default     = "azurermadmin"
+}
+
+variable "vm_size" {
+  description = "VM Scale Set Size"
+  type        = string
+  default     = "Standard_B1s"
+}
+
+variable "instance_count" {
+  description = "Number of VMSS instances"
+  type        = number
+  default     = 2
+}
+
